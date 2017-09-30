@@ -26,16 +26,16 @@
 
 - user table 
 
----|------
-id | name
----|------
+---|-----------|---------
+id | user_name | full_name
+---|-----------|---------
 
 - device table
 
 ---|-----------|----
-id | device_id | type
+id | serial_num | model
 ---|-----------|----
 
 - device connection history
 
-id | connect timestamp | disconnect timestamp
+id | device_id | begin
