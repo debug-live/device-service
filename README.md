@@ -35,3 +35,7 @@ id | name
 ---|-----------|----
 id | device_id | type
 ---|-----------|----
+
+- device connection history
+
+id | connect timestamp | disconnect timestamp
