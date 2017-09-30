@@ -4,7 +4,7 @@
       1. add device
    - R (push event support)
       1. connection status
-      1. static device info: device type, versions, ...
+      1. static device info: device type, ...
    - U
       1. device update
    - D
