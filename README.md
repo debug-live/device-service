@@ -23,3 +23,15 @@
 1. device update
 
 # Database
+
+- user table 
+
+---|------
+id | name
+---|------
+
+- device table
+
+---|-----------|----
+id | device_id | type
+---|-----------|----
