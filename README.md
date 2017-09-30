@@ -38,4 +38,10 @@ id | serial_num | model
 
 - device connection history
 
-id | device_id | begin
+id | device_id | connect_time
+
+# Skills TBK
+1. DB design: conception/logical design?
+1. UT cases
+1. Web FW?
+1. security
