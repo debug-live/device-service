@@ -1,0 +1,9 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    username: admin
+    password: maxwit
+    url: jdbc:mysql://localhost:3306/device
+    driver-class-name: com.mysql.jdbc.Driver
