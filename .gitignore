@@ -22,3 +22,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### project specific ###
+src/main/java/live/debug/msa/device/model/
+src/main/resources/live/debug/msa/device/model/

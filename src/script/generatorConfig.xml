@@ -12,27 +12,35 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost/paipai" userId="admin"
+                        connectionURL="jdbc:mysql://localhost/device" userId="admin"
                         password="maxwit">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.inspiry.dm.model"
-                            targetProject="../base-model/src/main/java">
+        <javaModelGenerator targetPackage="live.debug.msa.device.model.entity"
+                            targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.inspiry.dm.mapping"
+        <sqlMapGenerator targetPackage="live.debug.msa.device.model.mapper"
                          targetProject="src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.inspiry.dm.mapper" targetProject="src/main/java">
+                             targetPackage="live.debug.msa.device.model.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
         <table schema="xxx" tableName="tb_device" domainObjectName="Device"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <property name="useActualColumnNames" value="false"/>
+            <generatedKey column="ID" sqlStatement="mysql" identity="true"/>
+        </table>
+
+        <table schema="xxx" tableName="tb_connect_history" domainObjectName="ConnectHistory"
                enableCountByExample="true" enableUpdateByExample="true"
                enableDeleteByExample="true" enableSelectByExample="true"
                selectByExampleQueryId="true">
