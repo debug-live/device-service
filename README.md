@@ -24,21 +24,42 @@
 
 # Database
 
+## user database
+
 - user table 
 
----|-----------|---------
-id | user_name | full_name
----|-----------|---------
+field | type
+------|-----
+id | pk
+user_name | string
+full_name | string
+
+- login_history
+
+field | type
+------|-----
+id | pk
+user_id | string
+login_time | timestamp
+
+## device database
 
 - device table
 
----|-----------|----
-id | serial_num | model
----|-----------|----
+field | type
+------|-----
+id | pk
+serial_num | int
+model | string
 
-- device connection history
 
-id | device_id | connect_time
+- connection_history
+
+field | type
+------|-----
+id | pk
+device_id | string
+connect_time | timestamp
 
 # Skills TBK
 1. DB design: conception/logical design?
