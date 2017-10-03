@@ -11,16 +11,16 @@
                         password="maxwit">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="live.debug.msa.device.model" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="live.debug.msa.device.model.entity" targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="live.debug.msa.device.model" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="live.debug.msa.device.model.mapper" targetProject="src/main/resources">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="live.debug.msa.device.interfaces" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="live.debug.msa.device.model.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
