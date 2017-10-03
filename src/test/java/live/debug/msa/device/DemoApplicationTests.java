@@ -1,4 +1,4 @@
-package live.debug.msa.msademo;
+package live.debug.msa.device;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
