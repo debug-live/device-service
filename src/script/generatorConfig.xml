@@ -5,7 +5,8 @@
 <generatorConfiguration>
 
     <context id="MYSQLTables" targetRuntime="MyBatis3">
-        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
 
         <commentGenerator>
             <property name="suppressAllComments" value="true"/>
