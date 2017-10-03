@@ -1,7 +1,7 @@
 package live.debug.msa.device;
 
-import live.debug.msa.device.interfaces.DeviceMapper;
-import live.debug.msa.device.model.Device;
+import live.debug.msa.device.model.entity.Device;
+import live.debug.msa.device.model.mapper.DeviceMapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
