@@ -1,0 +1,21 @@
+server:
+  port: 8800
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      uri: http://localhost:8802/
+      profile: test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8801/eureka
+zuul:
+  prefix: /api
+  routes:
+    device-service: /device-service/**
+    user-service: /user-service/**
+
+
+
